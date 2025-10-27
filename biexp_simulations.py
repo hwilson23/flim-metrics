@@ -15,7 +15,6 @@ def _():
     import numpy as np
     import matplotlib.pyplot as plt
 
-
     return np, plt
 
 
@@ -56,7 +55,7 @@ def _(np):
         time_bins=256, 
         background_lambda_poissonian=0
         ):
-    
+
         min_time, max_time = time_range
         norm_amplitudes = np.array(fractions) / np.sum(fractions)
         component_photons = np.random.multinomial(num_photons, norm_amplitudes)
@@ -75,7 +74,6 @@ def _(np):
             bg_counts = np.random.poisson(background_lambda_poissonian, size=time_bins)
             counts = counts + bg_counts
         return times, counts
-
     return (simulate_multi_exponential_decay2,)
 
 
@@ -132,7 +130,7 @@ def _(mo):
     ## Flipper-TR
 
     - $\tau_1$ = $0.5 \dots 2 ns$
-    - $\tau_2$ = $2.8 \dots 7 ns$ 
+    - $\tau_2$ = $2.8 \dots 7 ns$
     """
     )
     return
@@ -145,7 +143,6 @@ def _(mo):
     sl_fractions_fr = mo.ui.slider(0, 100, label=r"$\tau_1Fraction(%)$",show_value=True,value=50)
     sl_background_fr = mo.ui.slider(0, 0.50,0.05, label=r"$bkg Poiss(\lambda)$",show_value=True,value=0.3)
     sl_num_photons_fr,sl_fractions_fr,sl_background_fr
-
     return sl_background_fr, sl_fractions_fr, sl_num_photons_fr
 
 
