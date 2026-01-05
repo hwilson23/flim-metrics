@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "biexp_decay-sim"
+version = "0.1.0"
+description = "Simulation and export of multi-exponential fluorescence decay data"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+    { name = "Helen Wilson", email = "hwilson23@wisc.edu" }
+]
+dependencies = [
+    "numpy",
+    "tifffile"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+[tool.setuptools.packages.find]
+where = ["src"]
