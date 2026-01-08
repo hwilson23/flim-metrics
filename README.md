@@ -1,3 +1,16 @@
+
+
+
+# Brief chronology
+- uw-loci/ MultivariateAnalysis_FLIM
+  - 2025 Wilson et al. SPIE Proceedings Paper   
+- uw-loci/ flim-metrics  (FLIM_variability_simulations)
+- uw-loci/ flim-metrics-viewer (hwilson23/ python_threshold_overlays)
+- uw-loc/ flim-metrics-multiplexing (hwilson23/ multiplexing_VAE)
+
+
+
+
 # FLIM_varability_simulation
 
 - biexp_simulations.py is python version of jupyter notebook
